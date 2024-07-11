@@ -2,6 +2,8 @@
 
 This script fetches data from the Coveo API and saves the results into a JSON file. To include dictionary fields in the output an Admin search token must be used and viewAllContent=1 appended to the search/v2 API call and 'debug': 'true' in the payload.
 
+When the search token expires, the script will save last rowid into a file and resume from the last successfuly retrieved rowid in the next run
+
 ## Requirements
 
 - Python 3.x
